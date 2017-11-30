@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/OdysseyOnlineClassic/odyssey-2-shared#readme",
   "devDependencies": {
-    "@types/node": "^8.0.53"
+    "@types/node": "^8.0.53",
+    "typescript": "^2.6.2"
   }
 }
