@@ -1,7 +1,7 @@
 {
   "name": "odyssey-2-shared",
   "version": "0.0.1",
-  "description": "",
+  "description": "Shared components of the open source Odyssey 2 Engine",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
