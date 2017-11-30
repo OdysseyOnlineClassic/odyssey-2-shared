@@ -7,7 +7,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive -r ts-node/register test/**/*.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,13 @@
   },
   "homepage": "https://github.com/OdysseyOnlineClassic/odyssey-2-shared#readme",
   "devDependencies": {
+    "@types/chai": "^4.0.6",
+    "@types/mocha": "^2.2.44",
     "@types/node": "^8.0.53",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
     "typescript": "^2.6.2"
   }
 }
