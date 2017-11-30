@@ -1,0 +1,24 @@
+{
+  "name": "odyssey-2-shared",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OdysseyOnlineClassic/odyssey-2-shared.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OdysseyOnlineClassic/odyssey-2-shared/issues"
+  },
+  "homepage": "https://github.com/OdysseyOnlineClassic/odyssey-2-shared#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.53"
+  }
+}
