@@ -1,1 +1,5 @@
 lib/
+.vscode/
+.editorconfig
+.travis.yml
+tsconfig.json
