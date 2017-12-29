@@ -9,15 +9,18 @@ export class Message {
     this.timestamp = Date.now();
   }
 
+  /**
+   * Appends data to a message
+   * 
+   * @param appendData 
+   * @return {Buffer} Bytes remaining after appending
+   */
   append(appendData: Buffer) {
-    if (this.bytesRead + appendData.length > this.length) {
-      throw new RangeError("Attempting to append to Message beyond its length");
-    }
-    let bytesLeft = this.length - this.bytesRead;
+    let bytesToAppend = this.length - this.bytesRead;
 
-    this.bytesRead += appendData.copy(this.data, this.bytesRead, 0, bytesLeft);
+    this.bytesRead += appendData.copy(this.data, this.bytesRead, 0, bytesToAppend);
 
-    return appendData.slice(bytesLeft);
+    return appendData.slice(bytesToAppend);
   }
 
   get complete(): boolean {
