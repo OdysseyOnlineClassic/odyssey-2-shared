@@ -1,5 +1,5 @@
 {
-  "name": "odyssey-2-shared",
+  "name": "odyssey-online-shared",
   "version": "0.0.1",
   "description": "Shared components of the open source Odyssey 2 Engine",
   "main": "dist/index.js",
