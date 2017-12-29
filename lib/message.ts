@@ -26,8 +26,4 @@ export class Message {
   get complete(): boolean {
     return this.bytesRead === this.length;
   }
-
-  isComplete(): boolean {
-    return this.bytesRead === this.length;
-  }
 }
