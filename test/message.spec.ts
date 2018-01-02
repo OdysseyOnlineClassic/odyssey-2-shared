@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { Message } from '../lib/message';
 
 describe('Message', () => {
-  const length = 100;
+  const length = 10;
   let msg: Message;
 
   beforeEach(() => {
