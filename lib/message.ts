@@ -1,18 +1,20 @@
+import { Enums } from "./enums";
+
 export class Message {
   data: Buffer;
   timestamp: number;
 
   private bytesRead = 0;
 
-  constructor(public id: number, public length: number) {
+  constructor(public system: Enums.Systems, public id: number, public length: number) {
     this.data = Buffer.allocUnsafe(length);
     this.timestamp = Date.now();
   }
 
   /**
    * Appends data to a message
-   * 
-   * @param appendData 
+   *
+   * @param appendData
    * @return {Buffer} Bytes remaining after appending
    */
   append(appendData: Buffer) {

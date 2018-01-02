@@ -3,10 +3,15 @@ import { expect } from 'chai';
 import { Message } from '../lib/message';
 
 describe('Message', () => {
+  const length = 100;
+  let msg: Message;
+
+  beforeEach(() => {
+    msg = new Message(0, 0, length);
+  });
+
   describe('append(Buffer)', () => {
     it('should properly append data', () => {
-      const length = 100;
-      const msg = new Message(0, length);
       const data = Buffer.allocUnsafe(length).fill(1, 0, length - 1);
 
       msg.append(data);
@@ -14,8 +19,6 @@ describe('Message', () => {
     });
 
     it('should return remaining data beyond message length', () => {
-      const length = 10;
-      const msg = new Message(0, length);
       const data = Buffer.allocUnsafe(length * 2);
 
       for (let i = 0; i < length * 2; i++) {
@@ -28,8 +31,6 @@ describe('Message', () => {
     });
 
     it('should return empty buffer when appending up to message length', () => {
-      const length = 10;
-      const msg = new Message(0, length);
       let data: Buffer;
       let actual: Buffer;
 
@@ -44,8 +45,6 @@ describe('Message', () => {
 
   describe('complete', () => {
     it('should be true when complete', () => {
-      const length = 10;
-      const msg = new Message(0, length);
       const data: Buffer = Buffer.allocUnsafe(length);
 
       msg.append(data);
@@ -54,8 +53,6 @@ describe('Message', () => {
     });
 
     it('should be false when expecting more data', () => {
-      const length = 10;
-      const msg = new Message(0, length);
       const data: Buffer = Buffer.allocUnsafe(length - 1);
 
       msg.append(data);
