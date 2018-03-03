@@ -1,4 +1,4 @@
-#Odyssey Network Protocol
+# Odyssey Network Protocol
 
 ## Message Structure
 |Byte(s)|Purpose|
