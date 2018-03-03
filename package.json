@@ -1,6 +1,6 @@
 {
   "name": "@odyssey/shared",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Shared components of the open source Odyssey 2 Engine",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
