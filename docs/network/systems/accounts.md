@@ -11,9 +11,9 @@
 #### Client -> Server
 |Byte|Meaning|
 |---|---|
-|0 - m|Username|
+|0 ... m|Username|
 |m + 1|Null Separator (must be 0)|
-|(m + 2) - n|Password|
+|(m + 2) ... n|Password|
 
 #### Server -> Client
 |Byte|Meaning|
@@ -32,9 +32,9 @@
 #### Client -> Server
 |Byte|Meaning|
 |---|---|
-|0 - m|Username|
+|0 ... m|Username|
 |m + 1|Null Separator (must be 0)|
-|(m + 2) - n|Password|
+|(m + 2) ... n|Password|
 
 #### Server -> Client
 |Byte|Meaning|
