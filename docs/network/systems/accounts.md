@@ -2,8 +2,8 @@
 ## Message Ids
 |Message Id|Meaning|
 |---|---|
-|0|[Create Account](#CreateAccount)|
-|1|[Login](#Login)|
+|0|[Create Account](#create-account)|
+|1|[Login](#login)|
 
 ## Message Data
 ### Create Account
